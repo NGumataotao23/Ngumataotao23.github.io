@@ -1,0 +1,140 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+body{
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    font-family: "Sitka Banner";
+    text-align: center;
+    color: white;
+    margin: 0;
+
+}
+hr {
+    
+    border: 0;
+    border-top: 1px solid rgb(83, 82, 82);
+    padding: 0;
+}
+.snow{
+    position: absolute;
+    transform: translateY(0);
+    animation-name: snowfall;
+    animation-duration: 20s;
+    animation-timing-function: steps(200);
+    animation-iteration-count: infinite;
+    z-index: 1;
+}
+@keyframes snowfall{
+    from{
+        transform: translateY(0);
+    }
+    to{transform:translateY(var(--snow-travel));}
+    
+}
+
+.snowLayer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.Header{
+    z-index: -1;
+}
+h1{
+    font-size: 50;
+}
+p{
+    font-size: 30;
+}
+.main{
+    
+    background-color: rgb(0, 0, 0);
+    min-height: 20vh;
+    position: static;
+    z-index: -1;
+    margin: 0;
+    
+}
+.pBG{
+    position:relative;
+    min-height: 20vh;
+    background-color: black;
+    z-index: 2;
+}
+.Projects{
+    position: relative;
+    z-index: 2;
+}
+.links{
+    font-size: 25;
+}
+.items{
+    
+    font-size: 20;
+    text-align: right;
+}
+.footer{
+    position: relative;
+}
+.snowPile{
+    position: relative;
+    align-items: baseline;
+    width: 100%;
+}
+.copywrite{
+    z-index: 100;
+    position: absolute;
+    font-size: 15;
+    color: black;
+    left:1480px;
+    top: 65px;
+}
+.wrapper1{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 100%;
+    
+}
+.projs1,
+.projs2,
+.projs3{
+    width: 400px;
+    height: 600px;
+    border: 1px solid white;
+    background-color: black;
+
+}
+.projs4,
+.projs5,
+.projs6{
+    width: 400px;
+    height: 600px;
+    border: 1px solid white;
+    background-color: black;
+
+}
+.l{
+    position: relative;
+    clear: left;
+}
+
+.projs1 img{
+    height: 200px;
+    width: 200px;
+}
+.projs2 img{
+    height: 200px;
+    width: 200px;
+}
+.butcherLink{
+    text-decoration: none;
+}
+
+

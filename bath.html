@@ -1,0 +1,69 @@
+<html>
+<head>
+<meta charset="utf-8">
+<script src ='home.js' defer></script> 
+<link rel="stylesheet" type= "text/css" href="font~color.css">  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="main">
+    <div3 class="snowLayer"></div3>
+        <div2 class="Header">
+           <h1>Nathan Gumataotao</h1> 
+           <a href = "index.html">
+                <img src = "assets/Illustration3.png">
+            </a>           
+            <p>Portfolio~2022+</p>   
+        </div2>
+    <hr/>
+    <div class = "pBG">
+        <div1 class ="Projects">
+            <div4 class="wrapper">
+                
+            <p1 class = "items">BATHYPELAGIC EXTINCTION <br> 
+            Indie Horror Game that has you play as a Time Travelling Researcher who travels back to<br>
+            the late Cretaceous to collect information on certain unknown species and collect samples<br>
+            of rare ancient materials that are endangered in modern times.<br>
+            IN PROGRESS...<br>
+            </p1>
+            <!-- placeholder -->
+            <script>
+                var channelID = "UCsJqAGHEApSDS-3uRFs0ewA";
+                var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+
+                $.getJSON(
+                "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL + channelID),
+                    function(data) {
+                        var link = data.items[0].link;
+                        var id = link.substr(link.indexOf("=") + 1);
+
+                $("#youtube_video").attr("src","https://youtube.com/embed/" + id + "?controls=0&showinfo=0&rel=0");
+                    }
+                );
+            </script>
+            <iframe id="youtube_video" width="700" height="400" frameborder="0" allowfullscreen></iframe>
+            <br>
+            <a href = "https://dave-winters.itch.io/the-butcher"> Itch.io Page </a>
+            <br>
+            <br>
+            </div4>
+            <br>
+            <br>
+        </div1>
+</div>
+    <hr/>
+    <br>
+    <div class ="footer">
+        <img src ="assets/snowPile.png", class="snowPile">
+        <p class ="Copywrite"> © Copywrite Nathan Gumataotao, Desire Machine Games,Trust No One</p>
+    </div>
+    
+</div>
+</body>
+</html>
+
+
+
+
