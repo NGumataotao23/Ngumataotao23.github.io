@@ -33,7 +33,7 @@ function startRandom(){
     const area = Math.floor(Math.random() * (winWidth - 50));
     return area;
 }
-setInterval(spawnSnow, 200);
+setInterval(spawnSnow, 400);
 
 
 
