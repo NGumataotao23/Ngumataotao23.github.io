@@ -17,6 +17,28 @@ hr {
     border-top: 1px solid rgb(83, 82, 82);
     padding: 0;
 }
+#persButton,
+#profButton{
+    background: none;
+    border: none;
+    font-family: "Sitka Banner";
+    text-align: center;
+    color: white;
+    font-size: 30;
+}
+#persButton:hover,
+#profButton:hover{
+    color: gray;
+}
+#icarus{
+    background: none;
+    border: none;
+    font-family: "Sitka Banner";
+    text-align: center;
+    color: white;
+    font-size: 25;
+
+}
 .snow{
     position: absolute;
     transform: translateY(0);
@@ -95,6 +117,16 @@ p{
 .wrapper1{
     
     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    width: 100%;
+    
+}
+.wrapper2{
+    
+    display: none;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;

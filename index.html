@@ -2,6 +2,7 @@
 <head>
 <meta charset="utf-8">
 <script src ='home.js' defer></script> 
+<script src ='switch.js' defer></script> 
 <link rel="stylesheet" type= "text/css" href="font~color.css">  
 
 </head>
@@ -24,9 +25,9 @@
         <div1 class ="Projects">
             <p>A collection of work I feel proud of.</p>
             <p>This will be constantly updated.</p>
-            <p class="selection" >Professional Work</p>
-            <p class="selection" >Personal Work</p>
-            <div4 class="wrapper1">
+            <button onclick = "showWork('prof')" id = "profButton">Professional Work</button><br>
+            <button onclick = "showWork('pers')"id = "persButton">Personal Work</button><br>
+            <div4 id = "Personal" class="wrapper1">
                 <a class ="butcherLink" href ="butcher.html">
                     <div class="projs1">
                         <p> The Butcher </p>
@@ -49,7 +50,7 @@
                 </a>
             </div4>
             <br>
-            <div4 class="wrapper1">
+            <div4 id = "Personal2" class="wrapper1">
                 <a class ="butcherLink" href ="juke.html">
                     <div class="projs4">
                         <p> MFC Jukebox </p>
@@ -73,6 +74,15 @@
                     </div>
                 </a>
             </div4>
+            <div5 id = "Professional" class = "wrapper2">
+                    <a class ="butcherLink" href ="mimic.html">
+                    <div class="projs4">
+                        <p> Icarus Alpha Inc </p>
+                        <img src = "assets/icarus.png">
+                        
+                    </div>
+                </a>
+            </div5>
         </div1>
     </div>
     <hr/>
