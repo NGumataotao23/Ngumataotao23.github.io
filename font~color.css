@@ -106,7 +106,7 @@ p{
     align-items: baseline;
     width: 100%;
 }
-.copywrite{
+.Copyright{
     z-index: 100;
     position: absolute;
     font-size: 15;
